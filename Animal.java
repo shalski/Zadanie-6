@@ -21,16 +21,16 @@ public class Animal {
     void takeForAWalk() {
         if (this.isAlive) {
 
-            this.weight -= 0.5;
-            System.out.println("Teraz jestem fit");
+            this.weight = this.weight - 0.5;
+            System.out.println("Zwierzak schudl");
 
             if (this.weight <= 0) {
                 this.isAlive = false;
-                System.out.println("Zwierzę zdechło z głodu");
+                System.out.println("Przesadziles z ta dieta (zdechlo)");
             }
 
         } else {
-            System.out.println("Policja została wezwana");
+            System.out.println("IJO IJO POLICJA WEZWANA");
         }
     }
 
